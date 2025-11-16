@@ -10,25 +10,22 @@
 <body>
 
   <nav class="navbar">
-    <div class="container navbar-content">
-      <div class="logo">
-        <i data-lucide="calendar"></i>
-        <h1>Campus Events</h1>
-      </div>
-      <div class="nav-controls">
-        <select id="user-role-select" class="form-select">
-          <option value="student">Student View</option>
-          <option value="organizer">Organizer View</option>
-        </select>
-        <button id="add-event-btn" class="btn btn-primary">
-          <i data-lucide="plus"></i>
-          <span>Add Event</span>
-        </button>
-      </div>
+  <div class="container navbar-content">
+    <div class="nav-controls">
+      
+      <div id="auth-container" class="auth-container"></div>
+      
+      <button class="btn btn-primary" id="add-event-btn">
+        <i data-lucide="plus-circle"></i>
+        <span>Add Event</span>
+      </button>
+      
     </div>
-  </nav>
+  </div>
+</nav>
 
   <main class="container page-content">
+    <div id="time-filters-container"></div>
     <div class="filters-toolbar">
       <div class="search-bar">
         <i data-lucide="search"></i>
@@ -54,6 +51,6 @@
 
   <div id="modal-container"></div>
 
-  <script src="ui.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

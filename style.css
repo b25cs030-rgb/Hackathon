@@ -593,3 +593,10 @@ i[data-lucide] {
   color: var(--color-yellow-400);
   fill: var(--color-yellow-400);
 }
+/* Add this for the blur effect when a modal is open */
+body.modal-open .navbar,
+body.modal-open .page-content {
+  filter: blur(4px);
+  pointer-events: none;
+  user-select: none;
+}
