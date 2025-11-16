@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Events</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container navbar-content">
+      <div class="logo">
+        <i data-lucide="calendar"></i>
+        <h1>Campus Events</h1>
+      </div>
+      <div class="nav-controls">
+        <select id="user-role-select" class="form-select">
+          <option value="student">Student View</option>
+          <option value="organizer">Organizer View</option>
+        </select>
+        <button id="add-event-btn" class="btn btn-primary">
+          <i data-lucide="plus"></i>
+          <span>Add Event</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container page-content">
+    <div class="filters-toolbar">
+      <div class="search-bar">
+        <i data-lucide="search"></i>
+        <input type="text" id="search-input" class="form-input" placeholder="Search events...">
+      </div>
+      <div class="view-mode-toggle">
+        <button id="view-grid-btn" class="view-btn active">
+          <i data-lucide="layout-grid"></i>
+        </button>
+        <button id="view-list-btn" class="view-btn">
+          <i data-lucide="list"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div id="category-filters" class="category-filters">
+      <i data-lucide="filter"></i>
+      </div>
+
+    <div id="event-list-container" class="grid-view">
+      </div>
+  </main>
+
+  <div id="modal-container"></div>
+
+  <script src="ui.js"></script>
+</body>
+</html>
